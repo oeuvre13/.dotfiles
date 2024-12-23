@@ -6,15 +6,14 @@ return {
         name = 'catppuccin',
         priority = 1000,
 
-        opts = {
-            flavour = 'macchiato', 
-            -- transparent_background = true,
-            styles = {
-                comments = {'italic'},
-            },
-        },
-
         config = function()
+            require('catppuccin').setup({
+                flavour = 'macchiato',
+                transparent_background = true,
+                styles = {
+                    comments = {'italic'},
+                },
+            })
             vim.cmd.colorscheme 'catppuccin'
         end
     },
