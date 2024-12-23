@@ -1,3 +1,5 @@
+### Path
+
 ### Editing
 set -o vi
 
