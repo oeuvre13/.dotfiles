@@ -20,6 +20,10 @@ setopt SHARE_HISTORY
 source ~/.antidote/antidote.zsh
 antidote load
 
+### Tmuxifier
+export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
+eval "$(tmuxifier init -)"
+
 ### Prompt
 autoload -U promptinit && promptinit && prompt pure
 autoload -U compinit && compinit
@@ -28,5 +32,10 @@ autoload -U compinit && compinit
 alias v=nvim
 alias t=tmux
 alias e=exit
+
+alias tns="tmuxifier new-session"
+alias tls="tmuxifier load-session"
+alias tes="tmuxifier edit-session"
+alias tmrls="tmuxifier ls"
 
 alias la='ls -lathr'
