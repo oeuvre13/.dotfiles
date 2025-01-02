@@ -1,6 +1,12 @@
 # Personal Neovim Configuration
 
 ## Plugins
+### Appearance
+- catppuccin
+- alpha
+- lualine
+- telescope-ui-select (for LSP code action, diagnostics, etc)
+- gitsigns
 ### Essentials
 - telescope
 - tree-sitter
@@ -14,12 +20,6 @@
 - mason-lspconfig
 - nvim-lspconfig
 - none-ls
-### Appearance
-- catppuccin
-- alpha
-- gitsigns
-- lualine
-- telescope-ui-select (for LSP code action, diagnostics, etc)
 ### QoL
 - autopair
 - comment
