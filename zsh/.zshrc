@@ -32,7 +32,6 @@ autoload -U compinit && compinit
 alias v=nvim
 alias t=tmux
 alias e=exit
-alias o=~/External/obsidian/Obsidian.AppImage
 
 alias tns="tmuxifier new-session"
 alias tls="tmuxifier load-session"
