@@ -12,7 +12,7 @@
 - tree-sitter
 - oil
 - neogit
-- harpoon (tbi)
+- harpoon 
 - undotree (tbi)
 - trouble (tbi)
 ### LSP, Linter, Formatter
