@@ -62,6 +62,12 @@ local plug_essential = {
 		lazy = false,
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
+	{
+        -- Harpoon
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
 }
 local plug_git = {
 	{
@@ -143,6 +149,7 @@ local plug_qol = {
 		},
 	},
 }
+
 -- Setup lazy.nvim
 require("lazy").setup({
 	plug_appearance,

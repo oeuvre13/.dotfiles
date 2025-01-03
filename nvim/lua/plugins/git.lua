@@ -1,5 +1,8 @@
+-- Neogit
 require('neogit').setup()
+vim.keymap.set("n", "<leader>gs", vim.cmd.Neogit)
 
+-- Gitsigns
 require('gitsigns').setup({
     signs                        = {
         add          = { text = '+' },
