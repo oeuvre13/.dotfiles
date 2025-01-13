@@ -3,12 +3,13 @@ require("mason").setup()
 
 -- Mason-LSPconfig
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls" },
+	ensure_installed = { "lua_ls", "gopls" },
 })
 
 -- LSPconfig
 local lspconfig = require("lspconfig")
 lspconfig.lua_ls.setup({})
+lspconfig.gopls.setup({})
 
 -- Nonels
 local null_ls = require("null-ls")
