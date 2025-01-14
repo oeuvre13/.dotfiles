@@ -39,3 +39,9 @@ alias tes="tmuxifier edit-session"
 alias tmrls="tmuxifier ls"
 
 alias la='ls -lathr'
+
+alias gs="git status"
+alias gp="git pull"
+alias ga="git add"
+alias gc="git commit -m"
+alias gP="git push"
