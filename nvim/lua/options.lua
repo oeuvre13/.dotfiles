@@ -17,6 +17,10 @@ vim.opt.smartindent = true
 -- vim.opt.undodir = "C:/undodir/"
 -- vim.opt.undofile = true
 
+-- Conceal level
+vim.opt.conceallevel = 3
+vim.opt.foldmethod = "syntax"
+
 -- Searching
 vim.opt.hlsearch = false
 vim.opt.incsearch = true

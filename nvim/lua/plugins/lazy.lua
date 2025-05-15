@@ -106,6 +106,22 @@ local plug_lsp = {
 		"nvimtools/none-ls.nvim",
 	},
 }
+local plug_autocmp = {
+    {
+        "hrsh7th/cmp-nvim-lsp"
+    },
+    {
+        "L3MON4D3/LuaSnip",
+        dependencies = {
+            "saadparwaiz1/cmp_luasnip",
+            "rafamadriz/friendly-snippets",
+        },
+    },
+    {
+        "hrsh7th/nvim-cmp"
+    },
+}
+
 local plug_qol = {
 	{
 		-- Autopair
@@ -156,5 +172,6 @@ require("lazy").setup({
 	plug_essential,
 	plug_git,
 	plug_lsp,
+    plug_autocmp,
 	plug_qol,
 })

@@ -3,13 +3,28 @@ require("mason").setup()
 
 -- Mason-LSPconfig
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "gopls" },
+	ensure_installed = { "lua_ls", "gopls", "html", "cssls", "ts_ls"},
 })
 
 -- LSPconfig
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 local lspconfig = require("lspconfig")
-lspconfig.lua_ls.setup({})
-lspconfig.gopls.setup({})
+lspconfig.lua_ls.setup({
+    capabilities = capabilities
+})
+lspconfig.gopls.setup({
+    capabilities = capabilities
+})
+lspconfig.html.setup({
+    capabilities = capabilities
+})
+lspconfig.cssls.setup({
+    capabilities = capabilities
+})
+lspconfig.ts_ls.setup({
+    capabilities = capabilities
+})
 
 -- Nonels
 local null_ls = require("null-ls")
