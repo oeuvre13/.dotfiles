@@ -24,6 +24,9 @@ antidote load
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
 
+### Path
+export PATH="$HOME/External/openshift-client-linux:$PATH"
+
 ### Prompt
 autoload -U promptinit && promptinit && prompt pure
 autoload -U compinit && compinit
@@ -45,3 +48,5 @@ alias gp="git pull"
 alias ga="git add"
 alias gc="git commit -m"
 alias gP="git push"
+
+fastfetch

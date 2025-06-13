@@ -3,7 +3,7 @@ require("mason").setup()
 
 -- Mason-LSPconfig
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "gopls", "html", "cssls", "ts_ls"},
+	ensure_installed = { "lua_ls", "gopls", "html", "cssls", "ts_ls", "jdtls"},
 })
 
 -- LSPconfig
@@ -23,6 +23,9 @@ lspconfig.cssls.setup({
     capabilities = capabilities
 })
 lspconfig.ts_ls.setup({
+    capabilities = capabilities
+})
+lspconfig.jdtls.setup({
     capabilities = capabilities
 })
 
