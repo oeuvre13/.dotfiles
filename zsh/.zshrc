@@ -28,6 +28,7 @@ eval "$(tmuxifier init -)"
 export PATH="$HOME/External/openshift-client-linux:$PATH"
 
 ### Prompt
+
 autoload -U promptinit && promptinit && prompt pure
 autoload -U compinit && compinit
 

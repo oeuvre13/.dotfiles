@@ -23,10 +23,14 @@ lspconfig.cssls.setup({
     capabilities = capabilities
 })
 lspconfig.ts_ls.setup({
-    capabilities = capabilities
+    capabilities = capabilities,
+    on_attach = function (client, bufnr)
+        vim.opt_local.foldmethod = "manual"
+        vim.opt_local.foldenable = false
+    end
 })
 lspconfig.jdtls.setup({
-    capabilities = capabilities
+    capabilities = capabilities,
 })
 
 -- Nonels
